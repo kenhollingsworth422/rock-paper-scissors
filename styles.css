@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: solid black;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+
+.player-choice {
+    display:flex;
+}
+
+.scoreboard {
+    display:flex;
+}
+
+button {
+    padding: 20px;
+}
