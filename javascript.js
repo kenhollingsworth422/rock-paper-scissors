@@ -11,8 +11,8 @@ function getComputerChoice(){
     }   
 }
 
-function getHumanChoice(){
-    let input = prompt("Please enter your choice for rock, paper, scissors: ");
+function getHumanChoice(selection){
+    let input = selection;
     return input
 }
 
@@ -26,19 +26,19 @@ function playRound(gethumanChoice, getcomputerChoice){
     computerChoice = computerChoice.toLowerCase()
 
     if (humanChoice == "rock" && computerChoice == "scissors"){
-        console.log("You win! Rock beats paper")
+    //    console.log("You win! Rock beats paper")
         return humanScore +=1
     }
     else if (humanChoice == "paper" && computerChoice == "scissors"){
-        console.log("You lose! Paper beats scissors.")
+    //    console.log("You lose! Paper beats scissors.")
         return computerScore +=1
     } 
     else if (humanChoice == "rock" && computerChoice == "paper"){
-        console.log("You lose! Paper beats rock.")
+    //    console.log("You lose! Paper beats rock.")
         return computerScore +=1
     }
     else if (humanChoice == "paper" && computerChoice == "rock"){
-        console.log("You win! Paper beats rock.")
+    //    console.log("You win! Paper beats rock.")
         return humanScore +=1
     }
     else if (humanChoice == "scissors" && computerChoice == "paper"){
@@ -64,3 +64,12 @@ function playGame(PlayRound){
         game = game - 1;
     }
 }
+
+const rock = document.querySelector(".rock");
+rock.addEventListener("click",(getComputerChoice,playRound) => {
+    getHumanChoice("rock")
+    getComputerChoice()
+    playRound(getHumanChoice,getComputerChoice)
+
+
+})

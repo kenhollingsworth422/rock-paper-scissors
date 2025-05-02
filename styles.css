@@ -1,7 +1,7 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: center;
     border: solid black;
     margin: auto;
     height: 500px;
@@ -10,12 +10,33 @@
 
 .player-choice {
     display:flex;
+    align-self: center;
 }
 
 .scoreboard {
     display:flex;
+    flex-direction: column;
 }
 
+.score {
+    display:flex;
+    height:50px;
+}
+
+.name {
+    align-self: center;
+    margin-bottom: 20px;
+}
 button {
     padding: 20px;
+    margin: 5px;
+    box-sizing: border-box;
+    width: 100px;
+    
+}
+
+.name {
+    border:solid black;
+
+
 }
