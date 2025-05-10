@@ -21,6 +21,8 @@
 .score {
     display:flex;
     height:50px;
+    justify-content: center;
+    gap:16px;
 }
 
 .name {
@@ -35,8 +37,4 @@ button {
     
 }
 
-.name {
-    border:solid black;
 
-
-}
